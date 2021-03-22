@@ -1,0 +1,58 @@
+// GOOGLE FOONTS
+$font-stack--google     : 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800';
+$font-family--primary   : 'Poppins', sans-serif;
+
+$font-weight--xs        : 300;
+$font-weight--sm        : 400;
+$font-weight--md        : 500;
+$font-weight--lg        : 600;
+$font-weight--xl        : 700;
+$font-weight--xxl       : 800;
+
+// QPICK COLORS
+
+$primary__color          : #fe6705;
+$secondary__color        : #f32853;
+$qpick__accent           : #edf5e1;
+$qpick__black            : #282830;
+$qpick__warning          : #ff7675;
+$qpick__succes           : #55efc4;
+$qpick__white            : #fff;
+$qpick__info             : #74b9ff;
+$qpick__grey             : #f3f7f8;
+$border                  : lighten($qpick__black, 70%);
+
+// COLOR MAPS
+
+$ui-colors         : (
+	default          : $qpick__black,
+	info             : $qpick__info,
+	warning          : $qpick__warning,
+	success          : $qpick__succes,
+	error            : $secondary__color 
+);
+
+// UNITS
+
+$base-font               : 16px;
+$base--line              : 24px;
+$letter-space            : 1px;
+$max-width               : 1200px;
+$gutter                  : 30px;
+$transition              : 0.4s;
+$br-radius               : 5px;
+$br-roundy               : 50%;
+$spaceamounts            : (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+$sides                   : (top, bottom, left, right);
+
+
+// BREAKPOINTS
+
+$breakpoints   : (
+	'xs'         : 575px,
+	'sm'         : 576px,
+	'md'         : 768px,
+	'lg'         : 1024px,
+	'xl'         : 1280px,
+	'xxl'        : 1900px,
+);

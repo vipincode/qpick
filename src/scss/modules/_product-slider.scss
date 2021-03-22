@@ -1,0 +1,75 @@
+// ======================================================================
+//                         SWIPER STYLE
+// ======================================================================
+
+#products {
+    background-color: $qpick__white;
+    margin: 80px 0px;
+    padding: 50px 0px;
+
+    article {
+        h2 {
+            font-size: em(32px);
+            font-weight: $font-weight--xl;
+            line-height: em(56px, 32px);
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: em(17px);
+            line-height: em(30px);
+        }
+    }
+}
+
+.swiper2 {
+    padding: em(20px);
+    border-radius: $br-radius;
+    .swiper-slide {
+        img {
+            display: block;
+            margin: 0 auto;
+            @include mq('xs') {
+                width: 85px;
+            }
+        }
+        span {
+            display: block;
+            text-align: center;
+            font-size: em(13px);
+            font-weight: $font-weight--lg;
+            margin-top: em(10px, 13px);
+            margin-bottom: em(20px, 13px);
+        }
+    }
+
+    .swiper-button-prev:after, 
+    .swiper-button-next:after {
+        color: $primary__color;
+        font-size: em(18px);
+    }
+
+    .swiper-button-prev, 
+    .swiper-container-rtl .swiper-button-next {
+        left: auto;
+        right: 61px;
+        top: 194px;
+        height: 30px;
+        width: 52px;
+        box-shadow: 0 0 10px rgba($qpick__black, .35);
+    }
+
+    .swiper-button-next, 
+    .swiper-container-rtl .swiper-button-prev {
+        right: 3px;
+        top: 194px;
+        height: 30px;
+        width: 52px;
+        box-shadow: 0 0 10px rgba($qpick__black, .35);
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $primary__color;
+    }
+
+}

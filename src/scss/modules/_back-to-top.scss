@@ -1,0 +1,41 @@
+// =================================================================
+//                  BACK TO TOP
+// =================================================================
+
+#top {
+    position: fixed;
+    bottom: em(30px);
+    right: em(15px);
+    z-index: 99;
+    border: none;
+    height: 42px;
+    width: 42px;
+    border-radius: $br-roundy;
+    color: $qpick__accent;
+    background: linear-gradient(-250deg, $secondary__color, $primary__color);
+    font-size: em(14px);
+    font-weight: $font-weight--xxl;
+    padding: 13px 0px;
+    cursor: pointer;
+    outline: none;
+    display: none;
+    transition: opacity $transition ease-in-out;
+    &:hover {
+        opacity: 0.75;
+    }
+
+    @include mq('md') {
+        right: (50px);
+    }
+}
+
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

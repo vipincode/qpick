@@ -1,0 +1,103 @@
+// ==========================================================================
+//                            TOP NAV STYLES
+// ==========================================================================
+.tp-wrap {
+    background: linear-gradient(135deg, $secondary__color, $primary__color, $secondary__color);
+    color: $qpick__accent;
+
+    @include mq('xxl') {
+        padding: 8px 0px;
+    }
+}
+
+.top-nav {
+    &--items {
+        ul {
+            @include flexy($just: space-between);
+            li {
+                display: block;
+                margin-right: em(15px);
+            }
+
+            li:last-child {
+                margin-right: 0px;
+            }
+            
+            li.tp-phone {
+                @include before-images($width: 18px, $height: 18px) {
+                    background: transparent url('../../images/small-call.png') no-repeat center / cover;
+                }
+
+                @include mq('lg') {
+                    @include before-images($width:22px, $height:22px) {
+                        top: 7px;
+                        left: 6px;
+                    }  
+                }
+            }
+
+            li.tp-email {
+                @include before-images($width: 18px, $height: 18px) {
+                    background: transparent url('../../images/small-emails.png') no-repeat center / cover;
+                }
+                @include mq('lg') {
+                    @include before-images($width:22px, $height:22px) {
+                        top: 1px;
+                        left: 0px;
+                    }  
+                }
+            }
+
+            li.tp-money {
+                @include before-images($width: 18px, $height: 18px) {
+                    background: transparent url('../../images/small-money.png') no-repeat center / cover;
+                }
+                @include mq('lg') {
+                    @include before-images($width:22px, $height:22px) {
+                        top: 4px;
+                        left: 0px;
+                    }  
+                }
+            }
+
+            li.tp-wallet {
+                @include before-images($width: 18px, $height: 18px) {
+                    background: transparent url('../../images/small-wallet.png') no-repeat center / cover;
+                }
+                @include mq('lg') {
+                    @include before-images($width:22px, $height:22px) {
+                        top: 7px;
+                        left: 6px;
+                    }  
+                }
+            }
+
+            li.tp-login {
+                @include before-images($width: 18px, $height: 18px) {
+                    background: transparent url('../../images/small-user.svg') no-repeat center / cover;
+                    top: 5px;
+                    left: 0px;
+                    border-radius: $br-roundy;
+                }
+            }
+
+        }
+        a {
+            color: $qpick__accent;
+            display: block;
+            font-size: em(11px);
+            padding: 5px 0px;
+            font-weight: $font-weight--xs;
+            padding-left: em(28px, 11px);
+            @include mq('lg') {
+                font-size: em(13px);
+                padding-left: em(28px, 13px);
+            }
+        }
+    }
+    
+    display: none;
+    @include mq('md') {
+        @include flexy($just: space-between);
+    }
+}
