@@ -20,26 +20,30 @@
 
     &--left {
         @include mq('md') {
-            flex: 1 80%;
+            flex: 1 75%;
         }
     }
 
     &--right {
         @include mq('md') {
-            flex-basis: 20%;
+            flex-basis: 25%;
         }
     }
 
     h4 {
         margin-bottom: 0px;
         color: $qpick__accent;
-        font-size: em(21px);
+        font-size: em(25px);
         font-weight: $font-weight--sm;
 
         @include mq('xs') {
             font-size: em(18px);
             line-height: em(34px, 18px);
         }
+    }
+
+    p {
+        color: $qpick__accent;
     }
 
     .btn {
