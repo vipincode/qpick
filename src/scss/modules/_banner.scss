@@ -64,7 +64,7 @@
 
             p {
                 font-size: em(14px);
-                font-weight: $font-weight--sm;
+                font-weight: $font-weight--xs;
                 @include mq('lg') {
                     font-size: em(18px);
                 }
@@ -92,7 +92,7 @@
             width: 100%;
             content: '';
             display: block;
-            background-color: rgba($color: $qpick__black, $alpha: 0.45);
+            background-color: rgba($color: $black, $alpha: 0.55);
         }
 
     }

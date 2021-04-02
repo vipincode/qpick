@@ -69,7 +69,8 @@
     padding: 0px;
     position: relative;
     &::after {
-        content: '>';
+        content: '\f105';
+        font-family: FontAwesome;
         font-size: em(20px);
         display: block;
         color: $qpick__black;
@@ -96,8 +97,8 @@
         display: block;
         a {
             display: block;
-            font-size: em(15px);
-            line-height: em(30px);
+            font-size: em(14px);
+            line-height: em(30px, 14px);
         }
     }
 }

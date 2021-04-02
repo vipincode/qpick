@@ -22,11 +22,13 @@
         li {
             display: block;
             text-align: left;
+            align-self: flex-start;
             a {
                color:$qpick__accent; 
                display: block;
-               font-size: em(15px);
+               font-size: em(14px);
                padding: 5px 0px;
+               font-weight: $font-weight--xs;
             }
         }
     }
