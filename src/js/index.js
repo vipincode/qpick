@@ -145,66 +145,14 @@ const swiper5 = new Swiper('.swiper5', {
         el: '.swiper-pagination5',
         type: 'progressbar',
         clickable: true,
-    //   dynamicBullets: true,
     },
 });
 
 // ===================================================================
-//                     STOP SWIPER ON MOUSE HOVER
-// ===================================================================
-
-// $(".swiper5").mouseenter(function() {
-//     swiper5.autoplay.stop();
-// });
-// $(".swiper5").mouseleave(function() {
-//     swiper5.autoplay.start();
-// });
-
-// ===================================================================
-//                     AUTO COMPLETE SEARCH FORM 
-// ===================================================================
-
-import $ from "jquery";
-import 'jquery-ui/ui/widgets/autocomplete';
-import 'jquery-ui/ui/widgets/accordion';
-
-var availableTags = [
-    "Adhar card",
-    "Money Transfer",
-    "ITR Filling",
-    "GST Filling",
-    "Rashan Card",
-    "Food Licenec",
-    "Vehicle Registration",
-    "Electricity Bill",
-    "PAN Card",
-    "GTM Portal Registartion",
-    "Shop Registration",
-    "Nidhi Company",
-    "Rera Regsitration",
-    "Cast Certificate",
-    "Income Certificate",
-    "Living Certifcate",
-    "Insurance",
-    "Online Education",
-    "DTH Recharge",
-    "Prepaid/Postpaid",
-    "Railway Ticket",
-    "Broadband"
-  ];
-  $( "#tags" ).autocomplete({
-    source: availableTags,
-    messages: {
-        noResults: 'no results',
-        results: function(amount) {
-            return amount + 'results.'
-        }
-    }
-  });
-  
-// ===================================================================
 //                     ACCORDIAN 
 // ===================================================================
+import $ from "jquery";
+import 'jquery-ui/ui/widgets/accordion';
 
   $( "#accordion" ).accordion({
     active: true,

@@ -244,35 +244,35 @@
 }
 
 .ft-email {
-    @include before-images($width: 18px, $height: 18px) {
+    @include before-images($width: 14px, $height: 14px) {
         background: transparent url('../../images/footer-email.png') no-repeat center / cover;
         top: 8px;
     }
 
     a {
-        padding-left: 30px;
+        padding-left: 22px;
     }
 }
 
 .ft-contact {
-    @include before-images($width: 18px, $height: 18px) {
+    @include before-images($width: 14px, $height: 14px) {
         background: transparent url('../../images/footer-contact.png') no-repeat center / cover;
         top: 8px;
     }
 
     a {
-        padding-left: 30px;
+        padding-left: 22px;
     }
 }
 
 .ft-web {
-    @include before-images($width: 18px, $height: 18px) {
+    @include before-images($width: 14px, $height: 14px) {
         background: transparent url('../../images/footer-web.png') no-repeat center / cover;
         top: 8px;
     }
 
     a {
-        padding-left: 30px;
+        padding-left: 22px;
     }
 }
 

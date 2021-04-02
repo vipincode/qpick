@@ -75,7 +75,7 @@
             li.tp-login {
                 @include before-images($width: 18px, $height: 18px) {
                     background: transparent url('../../images/small-user.svg') no-repeat center / cover;
-                    top: 5px;
+                    top: 6px;
                     left: 0px;
                     border-radius: $br-roundy;
                 }
@@ -88,10 +88,9 @@
             font-size: em(11px);
             padding: 5px 0px;
             font-weight: $font-weight--xs;
-            padding-left: em(28px, 11px);
+            padding-left: em(25px, 11px);
             @include mq('lg') {
                 font-size: em(13px);
-                padding-left: em(28px, 13px);
             }
         }
     }

@@ -13,7 +13,7 @@
 
     &-main {
         ul {
-            @include flexy($wrap: wrap, $just: space-between);
+            @include flexy($wrap: wrap, $just: space-between, $align: center);
 
             li {
                 text-align: center;
@@ -22,21 +22,8 @@
                 }
 
                 img {
-                    width: 24px;
                     display: block;
                     margin: 0 auto;
-
-                    @include mq('lg') {
-                        width: 26px;
-                    }
-
-                    @include mq('xl') {
-                        width: 29px;
-                    }
-
-                    @include mq('xxl') {
-                        width: 35px;
-                    }
                 }
 
                 .toggle-btn {

@@ -89,8 +89,9 @@
 }
 
 .policies {
-    background: url('../../images/policy.jpg') no-repeat 0 0 / cover;
-    padding: 30px 20px;
+    background: linear-gradient(rgba($black, 0.55), rgba($black, 0.55)),
+                url('../../images/policy.jpg') no-repeat center / cover;
+    padding: 120px 0px;
     color: #fff;
 
     h1 {
