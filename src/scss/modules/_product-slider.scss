@@ -57,6 +57,9 @@
         height: 30px;
         width: 52px;
         box-shadow: 0 0 10px rgba($qpick__black, .35);
+        @include mq('xs') {
+            display: none;
+        }
     }
 
     .swiper-button-next, 
@@ -66,6 +69,9 @@
         height: 30px;
         width: 52px;
         box-shadow: 0 0 10px rgba($qpick__black, .35);
+        @include mq('xs') {
+            display: none;
+        }
     }
 
     .swiper-pagination-bullet-active {

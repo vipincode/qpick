@@ -1,0 +1,155 @@
+// ============================================================
+//                PRICING TABLE CODE
+// ============================================================
+#plans {
+    margin: 80px 0px;
+}
+
+.plans {
+    &-container {
+        width: 95%;
+        max-width: 1200px;
+        margin: 0 auto;
+        @include mq('lg') {
+            width: 75%;
+        }
+    }
+    &-heading {
+        text-align: center;
+        h2 {
+            font-size: em(28px);
+            font-weight: $font-weight--lg;
+            span {
+                color: $primary__color;
+            }
+            @include mq('lg') {
+                font-size: em(38px);
+            }
+        }
+
+        p {
+            font-size: em(16px);
+            @include mq('lg') {
+                font-size: em(18px);
+            }
+        }
+    }
+
+    @include mq('lg') {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    &-slider {
+        position: relative;
+        margin-top: 50px;
+        .swiper-container {
+            position: initial;
+        }
+        @include mq('lg') {
+            margin-top: 100px;
+        }
+    }
+
+    &-card {
+        background-color: $qpick__white;
+        border-radius: $br-radius;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        @include flexy($dir: column);
+
+        .btn {
+            align-self: center;
+            margin-top: auto;
+        }
+    }
+
+    &-header {
+        padding: 50px;
+        background: linear-gradient(135deg, $secondary__color, $primary__color);
+        color: $qpick__white;
+        clip-path: polygon(100% 0, 100% 77%, 0 100%, 0 0);
+        h1 {
+            font-size: em(42px);
+            font-weight: $font-weight--sm;
+            margin: 0;
+        }
+        small {
+            font-size: em(14px);
+            font-weight: $font-weight--xs;
+            letter-spacing: $letter-space;
+        }
+    }
+
+    &-content {
+        padding: 0 40px 10px;
+        h3 {
+            font-size: em(32px);
+            font-weight: $font-weight--sm;
+            margin: 0;
+            border-bottom: 1px dashed $border;
+            line-height: em(75px, 32px);
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 30px;
+            li {
+                font-size: em(15px);
+                font-weight: $font-weight--xs;
+                line-height: em(32px, 15px);
+            }
+        }
+    }
+
+    &-tag {
+        background-color: $qpick__white;
+        padding: 5px 4px;
+        display: block;
+        position: absolute;
+        top: -12px;
+        left: 0;
+        width: 100%;
+        transform: translate(-136px, 23px) rotate(-38deg);
+        text-align: center;
+        color: $primary__color;
+        font-weight: $font-weight--md;
+        text-transform: uppercase;
+        box-shadow: 0 2px 10px 1px rgba($black, 0.16);
+    }
+}
+
+.swiper7 {
+    .swiper-button-prev:after, 
+    .swiper-button-next:after {
+        color: $primary__color;
+        font-size: em(18px);
+    }
+    .swiper-pagination-bullet-active {
+        background-color: $primary__color;
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        right: -32px;
+        background: #fff;
+        padding: 10px 18px;
+        border-top-right-radius: $br-radius;
+        border-bottom-right-radius: $br-radius;
+        @include mq('xs') {
+            display: none;
+        }
+    }    
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        left: -32px;
+        background: #fff;
+        padding: 10px 18px;
+        border-top-left-radius: $br-radius;
+        border-bottom-left-radius: $br-radius;
+        @include mq('xs') {
+            display: none;
+        }
+    }
+
+    .swiper-pagination7 {
+        bottom: -36px;
+    }
+}
