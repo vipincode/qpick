@@ -6,9 +6,16 @@
     background-image: url('../../images/contact-us.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -138px;
+    background-position: 0 0px;
     padding: em(120px) 0;
     position: relative;
+
+    @include mq('md') {
+        background-position: 0 -75px;
+    }
+    @include mq('lg') {
+        background-position: 0 -138px;
+    }
 }
 
 .about-us__heading::after {
@@ -28,7 +35,7 @@
     &__heading {
         h1 {
             font-size: em(32px);
-            font-weight: $font-weight--xxl;
+            font-weight: $font-weight--xl;
             color: $qpick__accent;
             margin: 0;
             text-align: center;
@@ -79,10 +86,15 @@
         }
 
         h2 {
-            font-size: em(26px);
-            font-weight: $font-weight--xxl;
-            line-height: em(35px, 26px);
-            margin-bottom: em(15px, 26px);
+            font-size: em(21px);
+            font-weight: $font-weight--lg;
+            line-height: em(30px, 21px);
+            margin-bottom: em(15px, 21px);
+            @include mq('sm') {
+                font-size: em(26px);
+                line-height: em(35px, 26px);
+                margin-bottom: em(15px, 26px);
+            }
             @include mq('md') {
                 font-size: em(36px);
                 line-height: em(45px, 36px);
@@ -91,10 +103,12 @@
         }
 
         p {
-            font-size: 17px;
+            font-size: em(17px);
             line-height: em(30px, 17px);
             @include mq('xs') {
+                font-size: em(16px);
                 margin-bottom: em(20px, 17px);
+                // font-weight: $font-weight--xs;
             }
         }
     }

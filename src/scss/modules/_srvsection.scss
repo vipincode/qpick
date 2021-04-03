@@ -23,7 +23,7 @@
 
     h1 {
         font-size: em(32px);
-        font-weight: $font-weight--xxl;
+        font-weight: $font-weight--xl;
         text-align: center;
         color: $qpick__accent;
         text-shadow: 0 0 10px rgba($qpick__black, 0.5);
@@ -42,6 +42,9 @@
 
 .srvsection {
     .srvheadings {
+        @include mq('xs') {
+            margin-bottom: em(30px);
+        }
         @include mq('lg') {
             width: 65%;
             margin: 0 auto;
@@ -52,7 +55,7 @@
         h2 {
             font-size: 32px;
             font-weight: $font-weight--lg;
-            line-height: em(30px, 32px);
+            line-height: em(38px, 32px);
             text-transform: capitalize;
 
             @include mq('lg') {

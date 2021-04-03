@@ -32,7 +32,9 @@
     }
     
     &--content {
-        padding: em(15px);
+        @include mq('md') {
+            padding: em(15px);
+        }
         @include mq('lg') {
             padding-left: 30px;
             padding-top: 0;
