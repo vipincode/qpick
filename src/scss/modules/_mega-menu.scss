@@ -2,59 +2,168 @@
 //            MEGA MENU
 // =============================================================
 
-.service-main {
-    position: relative;
-}
-.service_menu__inner {
-    position: absolute;
-    top: em(54px);
-    left: 0;
-    width: 100%;
-    background: linear-gradient(90deg, $secondary__color, $primary__color);
-    padding: em(15px);
-    border-radius: em(2px);
-    z-index: 99;
-    display: none;
-   
-    ul {
-        flex-direction: column;
-        -ms-flex-direction: column;
-        li {
-            display: block;
-            text-align: left;
-            align-self: flex-start;
-            a {
-               color:$qpick__accent; 
-               display: block;
-               font-size: em(14px);
-               padding: 5px 0px;
-               font-weight: $font-weight--xs;
+// // =====================================================================
+//                                SERVICES NAV
+// =====================================================================
+
+.service {
+    background-color: $qpick__black;
+    &-main {
+        position: relative;
+        ul {
+            li {
+                .menus {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    padding: 15px;
+                    text-align: initial;
+                    background: linear-gradient(135deg, $secondary__color, $primary__color);
+                    color:$qpick__white;
+                    z-index: 99;
+                    display: none;
+                    li {
+                        line-height: em(30px, 16px);
+                    }
+                    &--content {
+                        h3 {
+                            font-size: em(16px);
+                            margin-bottom: em(5px, 16px);
+                        }
+                        li {
+                            a {
+                                font-size: em(13px);
+                                font-weight: $font-weight--xs;
+                                text-align: left;
+                            }
+                        }
+                        ul {
+                            @include flexy($dir: column, $align: flex-start);
+                        }
+                    }
+                }
+
+                &:hover .menus {
+                    display: block;
+                    animation: scaleCenter $transition ease-in-out;
+                }
+                &:hover span::after {
+                    display: block;
+                    animation: bottomToTop $transition ease-in-out;
+                }
+                
+                span {
+                    position: relative;
+                    &::after {
+                        display: block;
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        position: absolute;
+                        top: 25px;
+                        border-left: 11px solid transparent;
+                        border-right: 11px solid transparent; 
+                        display: none;
+                    }
+                }
+                .icons--business {
+                    &::after {
+                        left: 53px;
+                        border-bottom: 18px solid $secondary__color;
+                    }
+                }
+                .icons--licence {
+                    &::after {
+                        left: 44px;
+                        border-bottom: 18px solid $secondary__color;
+                    }
+                }
+                .icons--complience {
+                    &::after {
+                        left: 60px;
+                        border-bottom: 18px solid $primary__color;
+                    }
+                }
+                .icons--insurance {
+                    &::after {
+                        left: 21px;
+                        border-bottom: 18px solid $primary__color;
+                    }
+                }
+                .icons--sells {
+                    &::after {
+                        left: 79px;
+                        border-bottom: 18px solid $primary__color;
+                    }
+                }
+                .icons--consultancy {
+                    &::after {
+                        left: 61px;
+                        border-bottom: 18px solid $primary__color;
+                    }
+                }
+                // .icons--recharge {
+                //     &::after {
+                //         left: 72px;
+                //         border-bottom: 18px solid $secondary__color;
+                //     }
+                // }
+                .icons--toggle {
+                    &::after {
+                        left: 10px;
+                        top: 28px;
+                        border-bottom: 18px solid $primary__color;
+                        @include mq('xl') {
+                            top: 33px;
+                        }
+                    }
+                }
+            }
+            .sm-menu {
+                position: relative;
+                .menus {
+                    width: 200px;
+                    left: -31px;
+                }
+                .menus--content {
+                    width: 100%;
+                    ul {
+                        width: 200px;
+                    }
+                }
+            }
+            .lg-menu {
+                position: relative;
+                .menus {
+                    width: 400px;
+                    left: -31px;
+                }
+                .menus--content {
+                    width: 100%;
+                    ul {
+                        width: 400px;
+                    }
+                }
             }
         }
     }
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: -15px;
-        right: 11px;
-        display: block;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        border-bottom: 25px solid $primary__color;
-    }
 }
 
-.service_menu:hover .service_menu__inner {
-    display: block;
-    animation: fadeBottom 0.4s ease-in-out;
-}
 
-@keyframes fadeBottom {
+@keyframes scaleCenter {
     from {
-        opacity: 0.5;
+        transform: scaleX(0);
     }
     to {
-        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes bottomToTop {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
     }
 }

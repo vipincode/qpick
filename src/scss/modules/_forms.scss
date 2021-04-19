@@ -1,0 +1,17 @@
+// ===================================================================
+//  Form
+// ===================================================================
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 7px 12px;
+  font-size: em(15px);
+  line-height: em(22px, 15px);
+  font-weight: $font-weight--xs;
+  border-radius: $br-radius;
+  border: 1px solid $border;
+  outline: none;
+}

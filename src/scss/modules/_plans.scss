@@ -5,15 +5,77 @@
     margin: 80px 0px;
 }
 
+.plan {
+    &-video {
+        background-repeat: no-repeat!important;
+        background-position: center!important;
+        background-size: cover!important;
+        height: 400px;
+        position: relative;
+        @include mq('xl') {
+            height: 100%;
+        }
+        &__url {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-text {
+        margin-top: 50px;
+        article {
+            margin-bottom: 24px;
+            h2 {
+                font-size: 25px;
+                font-weight: $font-weight--lg;
+            }
+
+            p {
+                font-weight: $font-weight--xs;
+                line-height: em(30px, 16px);
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                font-size: em(20px);
+                font-weight: $font-weight--md;
+            }
+        }
+    }
+    &-form {
+        background: $qpick__accent ;
+        padding: 12px;
+        border-radius: $br-radius;
+
+        h3 {
+            font-size: em(18px);
+        }
+        p {
+            font-size: 20px;
+            font-weight: $font-weight--lg;
+            line-height: em(10px, 20px);
+        }
+
+        span {
+            display: block;
+            font-size: em(13px);
+            font-weight: $font-weight--xs;
+        }
+    }
+}
+
 .plans {
     &-container {
         width: 95%;
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 50px auto 0px;
         @include mq('lg') {
             width: 75%;
         }
     }
+
     &-heading {
         text-align: center;
         h2 {
@@ -120,7 +182,7 @@
 }
 
 .swiper7 {
-    .swiper-button-prev:after, 
+    .swiper-button-prev:after,
     .swiper-button-next:after {
         color: $primary__color;
         font-size: em(18px);
@@ -137,7 +199,7 @@
         @include mq('xs') {
             display: none;
         }
-    }    
+    }
     .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
         left: -32px;
         background: #fff;

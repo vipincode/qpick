@@ -143,7 +143,7 @@
         @include mq('xl') {
             margin-top: 0;
         }
-        
+
     }
 
     &-address {
@@ -167,7 +167,7 @@
                 margin-bottom: em(50px);
             }
         }
-    
+
         ul {
             margin-top: em(20px);
             li {
@@ -214,6 +214,8 @@
                 width: 100%;
                 border: none;
                 outline: none;
+                border-radius: initial;
+                margin: 0;
                 padding: 8px 8px;
                 font-size: em(14px);
                 background: transparent;

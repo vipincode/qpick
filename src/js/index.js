@@ -1,5 +1,5 @@
 // ===================================================================
-//                    SWIPER CAROUSEL PLUGINS 
+//                    SWIPER CAROUSEL PLUGINS
 // ===================================================================
 
 import Swiper from 'swiper/bundle';
@@ -187,7 +187,7 @@ const swiper7 = new Swiper('.swiper7', {
   });
 
 // ===================================================================
-//                     ACCORDIAN 
+//                     ACCORDIAN
 // ===================================================================
 import $ from "jquery";
 import 'jquery-ui/ui/widgets/accordion';
@@ -198,7 +198,7 @@ import 'jquery-ui/ui/widgets/accordion';
   });
 
 // ===================================================================
-//                     BACK TO TOP 
+//                     BACK TO TOP
 // ===================================================================
 
 import anime from 'animejs/lib/anime.es.js';
@@ -228,7 +228,7 @@ if(btnTop) {
 }
 
 // ===================================================================
-//                     MOBILE NAV 
+//                     MOBILE NAV
 // ===================================================================
 
 $(".hamburger").on("click", function () {
@@ -273,7 +273,7 @@ $(window).scroll(function() {
     } else {
         $(".is__sticky").removeClass("js--is__sticky");
     }
-}); 
+});
 
 // ===================================================================
 //                     VERTICLE TABS
@@ -282,7 +282,7 @@ $(window).scroll(function() {
 var tabsLinks = $(".trm-vbtn");
 var tabContent = $(".tabcontent");
 $.each( tabsLinks, function() {
-    
+
   var linksId= $(this).attr("id");
   $(this).on('click', function(e) {
     e.preventDefault();
@@ -348,4 +348,10 @@ $('.account-signup').on('click', function(e) {
     e.preventDefault();
     $('.switcher-signin').addClass("switcher--active");
     $('.switcher-signup').removeClass('switcher--active');
-})
+});
+
+// ===================================================================
+//                     VIDEO PLUGINS
+// ===================================================================
+import 'jquery-ui/ui/widgets/accordion';
+import "lity/dist/lity";
